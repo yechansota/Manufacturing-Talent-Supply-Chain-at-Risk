@@ -61,7 +61,7 @@ def plot_layer1_aging(flow_df=None):
     print("\n[Layer 1] Generating Aging Risk Chart...")
 
     BASE_YEAR = 2024
-    years = np.arange(BASE_YEAR, 2036)   # 2024-2035
+    years = np.arange(BASE_YEAR, 2036)  
     t     = years - BASE_YEAR
 
     lambda_base  = 0.044
@@ -85,13 +85,12 @@ def plot_layer1_aging(flow_df=None):
         ax.text(2020.5, 5, 'COVID-19', ha='center', va='bottom',
                 color='#c0392b', fontsize=9, fontweight='bold', alpha=0.7)
 
-        # [수정 부분] Historical 데이터를 빨간 실선으로 변경
         ax.plot(flow_df['year'], hist_senior_idx,
-                color=COLORS['Manufacturing'], # 빨간색 적용
-                linewidth=2.5,                 # 실선 굵기 강조
-                marker='o', markersize=5,      # 마커 크기 소폭 확대
+                color=COLORS['Manufacturing'], 
+                linewidth=2.5,                
+                marker='o', markersize=5,     
                 label='Historical Senior Outflow (J2J actual)', 
-                alpha=1.0, zorder=5)           # 투명도 제거 및 우선순위 상향
+                alpha=1.0, zorder=5)       
 
         ax.axvline(2024, color='gray', linestyle='--', linewidth=1, alpha=0.5)
         ax.text(2023.8, y_max * 0.88, 'Simulation\nstarts',
@@ -320,7 +319,7 @@ def plot_layer3_retention():
     gaps          = [t - n for t, n in zip(total_rates, natural_rates)]
     bar_colors    = [COLORS.get(ind, '#95a5a6') for ind in industries]
 
-    fig, ax = plt.subplots(figsize=(10, 8))
+    fig, ax = plt.subplots(figsize=(12, 7))
     width = 0.28
 
     ax.bar(np.arange(len(industries)), natural_rates, width=width,
@@ -517,7 +516,7 @@ def plot_layer5_competition():
                 bbox=dict(boxstyle='round,pad=0.3', facecolor='white', edgecolor='gray', alpha=0.9))
         nf_color = 'green' if nf > 0 else 'red'
         ax.text(0, i - 0.38, f'Delta {nf:+.1f}%', ha='center', fontsize=10,
-                color=nf_color, style='italic', fontweight='bold')
+                color='#4A4A4A', style='italic', fontweight='normal')
 
     mfg_net      = net_flow[0]
     top_gain_idx = np.argmax(net_flow[1:]) + 1
@@ -539,7 +538,7 @@ def plot_layer5_competition():
 
     ax.set_title('[Layer 5] External Competition: Where Did Manufacturing Workers Go?',
                  fontsize=14, fontweight='bold')
-    ax.set_xlim(-35, 35)
+    ax.set_xlim(-50, 50)
     ax.set_xticks([])
     ax.set_yticks([])
     ax.legend(loc='upper right', frameon=True, fontsize=10)
