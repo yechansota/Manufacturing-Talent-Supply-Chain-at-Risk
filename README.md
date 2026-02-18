@@ -1,5 +1,5 @@
 
-# **Manufacturing-Talent-Supply-Chain-at-Risk**
+# **Manufacturing Talent Supply Chain at Risk**
   
 Manufacturing Talent Supply Chain at Risk: A 15-Year Empirical Analysis of the Energy Belt (2010–2024)
 <p align="center">
@@ -9,19 +9,15 @@ Manufacturing Talent Supply Chain at Risk: A 15-Year Empirical Analysis of the E
 
 📋 Overview
 This project analyzes the structural collapse of the manufacturing workforce pipeline in the U.S. Energy Belt region. Using federal government data (Census J2J, IPEDS, BLS), we decompose workforce attrition into five interconnected risk layers and provide actionable insights for HR practitioners.
-Key Questions Addressed
 
+Key Questions Addressed
 How fast is the workforce depleting due to aging?
 Why are workers leaving beyond natural retirement?
 Can we replace those who leave?
 Can we effectively train new hires?
 Are other industries stealing our talent?
 
-
-🔑 Key Findings
-MetricCurrent Value2035 ForecastAssessmentWorkforce Half-Life15.8 years10.5 years (accelerated)🔴 CRITICALReplacement Ratio0.250.18🔴 CRITICALStructural Gap6.6%p-🟡 HIGHAnnual Supply Gap-2,653 workers-🟡 MODERATE
-
-🏗️ Framework: 5-Layer Risk Model
+**Framework: 5-Layer Risk Model**
 ┌─────────────────────────────────────────────────────────────┐
 │           TALENT SUPPLY CHAIN RISK MODEL                    │
 └─────────────────────────────────────────────────────────────┘
@@ -37,59 +33,7 @@ Layer 4: TRAINING CAPACITY   → Can we train new hires properly?
 Layer 5: EXTERNAL COMPETITION → Are others stealing our talent?
                                  Net Flow: -3.1%p to other industries
 
-📊 Data Sources
-SourceProviderPeriodRecordsUsageJ2JCensus Bureau2010-2024~85MReplacement Ratio, Markov ChainIPEDSDept. of Education2010-2024~4.3MGraduate supply analysisBLSBureau of Labor Statistics2024-Exit rates, job openings
 
-📁 Project Structure
-manufacturing-talent-risk/
-│
-├── data/                       # Raw and processed data
-│   ├── j2j_census.csv          # Census J2J flows (large file)
-│   ├── ipeds_completions.csv   # IPEDS graduate data
-│   └── bls_separations.xlsx    # BLS Table 1.10
-│
-├── src/                        # Source code
-│   ├── final_portfolio.py      # Main analysis script
-│   ├── j2j_preprocessing.py    # J2J data cleaning
-│   └── utils.py                # Helper functions
-│
-├── output/                     # Generated outputs
-│   ├── layer1_aging.png
-│   ├── layer2_attrition.png
-│   ├── layer3a_rr.png
-│   ├── layer3b_gap.png
-│   ├── layer4_training.png
-│   ├── layer5_competition.png
-│   └── analysis_summary.txt
-│
-├── docs/                       # Documentation
-│   ├── TECHNICAL.md            # Technical documentation
-│   └── portfolio.docx          # Executive report
-│
-├── README.md                   # This file
-└── requirements.txt            # Python dependencies
-
-🚀 Quick Start
-Prerequisites
-bash# Python 3.10+
-python --version
-
-# Required packages
-pip install pandas numpy scipy matplotlib seaborn
-Installation
-bash# Clone repository
-git clone https://github.com/yourusername/manufacturing-talent-risk.git
-cd manufacturing-talent-risk
-
-# Install dependencies
-pip install -r requirements.txt
-Running Analysis
-bash# Execute main analysis
-python src/final_portfolio.py
-
-# Output saved to ./output/
-
-📈 Layer Details
 Layer 1: Aging Risk
 
 Model: Exponential Decay (N(t) = N₀ × e^(-λt))
