@@ -2,7 +2,7 @@
 <p align="center">
   <strong>A 15-Year Empirical Analysis of the Energy Belt (2010–2024)</strong><br>
   <em>Quantitative Diagnosis of Workforce Attrition Using Multi-Layer Risk Framework</em><br>
-  <small>(Region: Alabama · Georgia · North Carolina · South Carolina · Tennessee)</small>
+  <small>(Region: AL · GA · NC · SC · TN)</small>
 </p>
 
 ## **Project Motivation**
