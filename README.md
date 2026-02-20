@@ -16,6 +16,38 @@ I initiated this project to provide a data-driven "stress test" of our talent su
 
 While each layer independently signals significant stress, their interaction describes a self-reinforcing collapse mechanism. Without immediate, coordinated intervention, this demographic and competitive shift will fundamentally reshape the region’s manufacturing capacity well before 2040. This analysis serves as a strategic roadmap to identify where our "talent reservoir" is leaking and how we can secure the skilled human capital necessary for the future of the automotive sector.
 
+---
+
+## Layer Details
+
+### Layer 1: Aging Risk
+- **Model**: Exponential Decay (`N(t) = N₀ × e^(-λt)`)
+- **Baseline λ**: 4.4%/year (BLS Table 1.10)
+- **Accelerated λ**: 6.6%/year (Baby Boomer peak scenario)
+- **Result**: Half-life reduces from 15.8 → 10.5 years under acceleration
+
+### Layer 2: Attrition Risk
+- **Metric**: Structural Gap = Total Separation - Natural Exit
+- **Manufacturing Gap**: 6.6%p (highest among peer industries)
+- **Comparison**: Construction (3.1%p), Logistics (4.2%p), Retail (5.6%p)
+
+### Layer 3: Hiring Capacity
+- **3-A (J2J)**: Replacement Ratio = Young Inflow / Senior Outflow
+  - 2010: RR = 0.95 | 2024: RR = 0.25 | 2035 forecast: 0.18
+  - Statistical significance: p = 0.001, R² = 0.87
+- **3-B (IPEDS)**: Supply = 33,047 vs Demand = 35,700 → Gap = -2,653/year
+
+### Layer 4: Training Capacity
+- **Concept**: Senior depletion → Mentoring loss → Poor training → Higher turnover
+- **Policy Impact**: Phased retirement can preserve +7.3pts mentor stock by 2035
+
+### Layer 5: External Competition
+- **Method**: Markov transition matrix from J2J data
+- **Result**: Manufacturing net loss of -3.1%p to other industries
+- **Primary Competitor**: Logistics (+5.3%p gain)
+
+---
+
 ## **The Core Finding in Three Sentences**
 First, the Energy Belt’s senior manufacturing workforce is exiting at an accelerated rate of **6.6%** per year — driven by Baby Boomer retirements — and will be reduced by more than half within a decade (BLS Table 1.10, 2024,Layer 1). Second, while young workers aged 25–34 are currently entering manufacturing at a healthy ratio of **2.57** replacements per departure, that ratio is declining at a statistically significant rate of **0.12** per year (p < 0.001, Census J2J 2010–2024, Layer2 ), and if the trend holds, will fall below the critical sustainability threshold of 1.0 by approximately 2037. Third, the **11% annual** **separation** rate for manufacturing — the **highest** among comparable industries — means that even workers who do enter are leaving faster than they can be replaced, creating a vicious cycle in which the loss of senior mentors accelerates the departure of junior workers, further depleting the talent pipeline.
 
@@ -25,7 +57,7 @@ First, the Energy Belt’s senior manufacturing workforce is exiting at an accel
 <img width="2084" height="884" alt="layer1_aging" src="https://github.com/user-attachments/assets/9b29b1b2-7cb3-48e5-93f3-1dbdefae6492" />
 
 ### **Layer 1: Aging Risk — The Structural Certainty of Demographic Exit**
-**The most certain element of this analysis is not a forecast, but simple arithmetic:** the Energy Belt’s senior manufacturing workforce is aging out faster than it can be replaced. According to Bureau of Labor Statistics (BLS) data, the historical "natural" separation rate for manufacturing—driven by unavoidable factors like retirement and health—has averaged **4.4%** annually. This represents the baseline velocity of labor loss that no employer policy can fully prevent.
+The Energy Belt’s senior manufacturing workforce is aging out faster than it can be replaced. According to Bureau of Labor Statistics (BLS) data, the historical "natural" separation rate for manufacturing—driven by unavoidable factors like retirement and health—has averaged **4.4%** annually. This represents the baseline velocity of labor loss that no employer policy can fully prevent.
 
 Current data for the Southeast manufacturing sector shows an effective annual separation rate approaching **6.6%**. While the difference between 4.4% and 6.6% may seem modest, the compounding effect over a decade is transformative. Under the baseline scenario, the industry retains **61%** of its current workforce by 2035; under the accelerated scenario, that figure drops to **48.7%**. For a region with 1.2 million manufacturing workers, this shift represents a loss of roughly 150,000 experienced employees beyond original projections. Historical data from the Census Bureau’s Job-to-Job Flows (J2J) validates these trends. Between 2010 and 2019, senior outflows rose steadily as early Boomers reached retirement age. A brief dip occurred during the 2020–2021 pandemic lockdowns due to economic uncertainty, but by 2022, the trend resumed with even greater intensity as pent-up retirements were released.
 
