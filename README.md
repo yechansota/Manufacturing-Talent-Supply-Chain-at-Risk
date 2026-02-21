@@ -114,7 +114,7 @@ The analysis compares the "Origin" (2010 share of worker flows) to the "Destinat
 
 ---
 
-### **Consideration**
+### **Considerations**
 **Geographic and Sectoral Aggregation**
 The use of state-level Job-to-Job Flows (J2J) data necessitates a degree of generalization. By treating the five-state Energy Belt as a single economic unit, the model overlooks localized variations. Significant differences exist between dense, high-tech automotive corridors and rural industrial counties, which may experience demographic pressures differently.
 
