@@ -5,12 +5,6 @@
   <small>(Region: AL · GA · NC · SC · TN)</small>
 </p>
 
-**Analytical Architecture**
-
-To transform 15 years of fragmented federal data into a predictive model, I developed a Five-Layer Diagnostic Framework. This methodology moves beyond traditional static reporting by applying System Dynamics and Predictive Analytics to the regional talent supply chain.
-**Data Synthesis**: Integrated 2010–2024 records from the U.S. Census Bureau (J2J/QWI), BLS, and IPEDS.
-**Modeling Approach**: Combines Exponential Decay (Demographics), Supply-Demand Gap Analysis (Education), and Stock-Flow Simulation (Knowledge Transfer).
-
 ### **Project Motivation**
 This project initially began in 2023 as an HR Case Competition focused on workforce aging. While my team's approach then was centered on identifying "best practices," I often wondered if we could go further by quantifying the actual velocity and structural mechanics of these shifts.
 
@@ -22,9 +16,15 @@ I initiated this project to provide a data-driven "stress test(What-IF-Scenario)
 
 While each layer independently signals significant stress, their interaction describes a self-reinforcing collapse mechanism. Without immediate, coordinated intervention, this demographic and competitive shift will fundamentally reshape the region’s manufacturing capacity well before 2040. This analysis serves as a strategic roadmap to identify where our "talent reservoir" is leaking and how we can secure the skilled human capital necessary for the future of the automotive sector.
 
+**Analytical Architecture**
+
+To transform 15 years of fragmented federal data into a predictive model, I developed a Five-Layer Diagnostic Framework. This methodology moves beyond traditional static reporting by applying System Dynamics and Predictive Analytics to the regional talent supply chain.
+**Data Synthesis**: Integrated 2010–2024 records from the U.S. Census Bureau (J2J/QWI), BLS, and IPEDS.
+**Modeling Approach**: Combines Exponential Decay (Demographics), Supply-Demand Gap Analysis (Education), and Stock-Flow Simulation (Knowledge Transfer).
 
 ### The Core Finding: A Multi-Layered Talent Crisis 
 First, according to (`Layer 1`) (BLS Table 1.10, 2024), the Energy Belt’s senior manufacturing workforce is exiting at an accelerated rate of 6.6% per year, primarily driven by Baby Boomer retirements, which will reduce the veteran talent pool by more than half within a decade.
+
 **Layer 1: Aging Risk**
 - **Model**: Exponential Decay **$$N(t) = N₀ × e^(-λt)$$**
 - **Baseline λ**: 4.4%/year (BLS Table 1.10)
@@ -32,12 +32,14 @@ First, according to (`Layer 1`) (BLS Table 1.10, 2024), the Energy Belt’s seni
 - **Result**: Half-life reduces from 15.8 → 10.5 years under acceleration
 
 Second, as shown in (`Layer 2`) (Census J2J 2010–2024), while young workers aged 25–34 are currently entering at a ratio of 2.57 replacements per departure, this ratio is declining at a statistically significant rate of 0.12 per year (p < 0.001), putting the industry on a path to fall below the critical sustainability threshold of 1.0 by 2037.
+
 **Layer 2: Attrition Risk**
 - **Metric**: Structural Gap = Total Separation - Natural Exit
 - **Manufacturing Gap**: 6.6%p (highest among peer industries)
 - **Comparison**: Construction (3.1%p), Logistics (4.2%p), Retail (5.6%p)
 
 Third, the analysis in (`Layer 3`) reveals that manufacturing's 11% annual separation rate—the highest among comparable industries—is compounded by the cultural and economic friction points.
+
 **Layer 3: Hiring Capacity**
 - **3-A (J2J)**: Replacement Ratio = Young Inflow / Senior Outflow
 - 2010: RR = 0.95 | 2024: RR = 0.25 | 2035 forecast: 0.18
@@ -45,11 +47,13 @@ Third, the analysis in (`Layer 3`) reveals that manufacturing's 11% annual separ
   **3-B (IPEDS)**: Supply = 33,047 vs Demand = 35,700 → Gap = -2,653/year
 
 Layer 3 identified in our (`Layer 4`) Stock-Flow simulation. This simulation demonstrates that the resulting "Mentorship Vacuum" accelerates junior turnover, threatening to collapse the talent pipeline index from 258 to 9 by 2035, with a systemic "point of no return" arriving as early as 2028.
+
 **Layer 4: The No-Intervention Scenario (The "Knowledge Vacuum")**
 - **Concept**: Senior depletion → Mentoring loss → Poor training → Higher turnover
 - **Policy Impact**: Phased retirement can preserve +7.3pts mentor stock by 2035
 
 Finally, the external market pressure identified in (`Layer 5`) confirms that this is not just an internal depletion but a competitive loss, as the regional workforce is being actively redistributed toward the Logistics (+5.3%) and Service (+3.0%) sectors, leaving manufacturing at a structural disadvantage in the regional "war for talent."
+
 **Layer 5: External Competition**
 - **Method**: Markov transition matrix from J2J data
 - **Result**: Manufacturing net loss of -3.1%p to other industries
