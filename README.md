@@ -103,7 +103,7 @@ To capture the long-term impact of knowledge loss, Layer 4 employs a Stock-Flow 
 ### **Layer 5: External Competition — Mapping the Sectoral Shift**
 <img width="1785" height="1035" alt="layer5_competition" src="https://github.com/user-attachments/assets/2bc2317b-557f-4a77-aee1-3f3344326e30" />
 
-Utilizing a Longitudinal Migration Analysis, Layer 5 investigates the shifting preferences of the modern workforce across the Sun Belt’s industrial landscape. We analyze the Origin-Destination (O-D) matrix to determine the structural drivers behind sectoral talent drain.
+Utilizing a Longitudinal Migration Analysis, Layer 5 investigates the shifting preferences of the modern workforce across the Energy Belt’s industrial landscape. We analyze the Origin-Destination (O-D) matrix to determine the structural drivers behind sectoral talent drain.
 
 **The Sectoral Shift: Winners and Losers**
 The analysis compares the "Origin" (2010 share of worker flows) to the "Destination" (2024 share). The results show a clear redistribution of the regional workforce:
